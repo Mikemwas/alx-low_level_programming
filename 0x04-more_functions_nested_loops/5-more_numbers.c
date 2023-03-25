@@ -2,7 +2,7 @@
 
 /**
  * more_numbers -> printing more numbers
- *Return: 10 times of the numbers since 0 upto 14
+ * Return: 10 times of the numbers since 0 upto 14
  */
 
 void more_numbers(void)
