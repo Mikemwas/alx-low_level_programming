@@ -2,7 +2,6 @@
 
 /**
  * more_numbers -> printing more numbers
- * Return: 10 times of the numbers since 0 upto 14
  */
 
 void more_numbers(void)
@@ -17,5 +16,5 @@ void more_numbers(void)
 	_putchar(y + '0');
 	}
 	_putchar('\n')
-}
+	}
 }
