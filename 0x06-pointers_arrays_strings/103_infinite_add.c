@@ -1,8 +1,8 @@
-#include "main.h"
-
+ #include "main.h"                                                                                                                       
+                                                                                                                                        
 char *add_strings(char *n1, char *n2, char *r, int r_index);                                                                            
 char *infinite_add(char *n1, char *n2, char *r, int size_r);                                                                            
-
+                                                                                                                                        
 /**                                                                                                                                     
  * add_strings - Adds the numbers stored in two strings.                                                                                
  * @n1: The string containing the first number to be added.                                                                             
@@ -50,3 +50,4 @@ char *add_strings(char *n1, char *n2, char *r, int r_index)
                                                                                                                                         
         return (r + r_index + 1);                                                                                                       
 }
+
