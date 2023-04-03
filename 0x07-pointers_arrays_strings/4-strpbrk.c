@@ -1,25 +1,23 @@
 #include <stdio.h>
 #include "main.h"
 /*
- * _strbrk - entry poitn
+ * _strpbrk - Entry point
  * @s: input
  * @accept: input
  * Return: Always 0 (success)
  */
 char *_strpbrk(char *s, char *accept)
 {
-	while (*s != '\0')
+	int i, n;
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		char* p = accept;
-		while (*p != '\0')
+		for (n = 0; accept[n] != '\0'; n++)
 		{
-			if (*s == *p)
-			{
-				return (s);
-			}
-			p++;
+			if (s[i] == accept[n])
+				return (s + i);
 		}
-		s++;
 	}
+
 	return (NULL);
 }
