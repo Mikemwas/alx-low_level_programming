@@ -1,11 +1,11 @@
-#include "main.h"
 #include <stdlib.h>
+#include "main.h"
 
 /**
- * mallock_checked - memory allocation using malloc
- * @b: How many beats
+ * *malloc_checked - allocates memory using malloc
+ * @b: number of bytes to allocate
  *
- * Return: always (0) success.
+ * Return: a pointer to the allocated memory
  */
 
 void *malloc_checked(unsigned int b)
