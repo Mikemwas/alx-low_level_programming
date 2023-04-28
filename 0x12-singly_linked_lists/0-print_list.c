@@ -5,9 +5,11 @@
  * print_list - prints all the elements of a linked list
  * @h: pointer to the head of the list
  *
- * Return: the number of nodes
+ * Return: The number of nodes
  */
+
 size_t print_list(const list_t *h)
+
 {
 	size_t s = 0;
 
@@ -20,7 +22,6 @@ size_t print_list(const list_t *h)
 		h = h->next;
 		s++;
 	}
-
 	return (s);
 }
 
