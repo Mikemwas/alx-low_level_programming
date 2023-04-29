@@ -7,21 +7,17 @@
  *
  * Return: The number of nodes in the list.
  */
-size_t print_list(const list_t *h)
+size_t print_listint(const listint_t *h)
 {
-	size_t count = 0;
+	size_t num = 0;
 
-	while (h != NULL)
+	while (h)
 	{
-		if (h->str != NULL)
-		printf("[%u] %s\n", h->len, h->str);
-	else
-		printf("[0] (nil)\n");
-
-		count++;
+		printf("%d\n", h->n);
+		num++;
 		h = h->next;
 	}
 
-		return (count);
+	return (num);
 }
 
