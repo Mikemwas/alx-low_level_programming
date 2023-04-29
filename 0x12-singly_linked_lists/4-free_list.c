@@ -2,8 +2,9 @@
 #include "lists.h"
 
 /**
- * free_list - linked list in this program is freed
- * @head: list list_t here is freed
+ * free_list - let everything go freee now
+ *
+ * @head: start of a linked list
  */
 void free_list(list_t *head)
 {
