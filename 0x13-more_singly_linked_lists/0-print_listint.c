@@ -1,22 +1,21 @@
 #include "lists.h"
 
 /**
- * print_listint - it printseverything contained in  linked list
- * @h: associated  list of listint_t to print
+ * listint_len - gives out
+ * @h:  Listint_t to work on
  *
- * Return: Nodes digits
+ * Return: how many nodes
  */
-size_t print_listint(const listint_t *h)
+size_t listint_len(const listint_t *h)
 {
- size_t num = 0;
+	size_t num = 0;
 
- while (h)
- {
- printf("%d\n", h->n);
- num++;
- h = h->next;
- }
+	while (h)
+	{
+		num++;
+		h = h->next;
+	}
 
- return (num);
+	return (num);
 }
 
